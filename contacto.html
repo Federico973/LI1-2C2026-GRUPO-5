@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <!-- Encabezado de la página -->
+        <h1>Centro Turistico de Ciudades</h1>
+        <!-- Logo de la página -->
+        <img src="logo.png" alt="Logo del Centro Turistico de Ciudades">
+        <nav>
+        <!-- Barra de navegación --> 
+            <ul>
+                <!-- Enlaces de navegación -->
+                 <!-- El href con el # te perminete hacer saltos sobre la misma pagina o se podria buscar otra para que de salto a otra pagina -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#ciudades">Ciudades</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div>
+        <h1>Contacto</h1>
+        <p>Nuestra oficina de turismo</p>
+    </div>
+
+    <div>
+        <h2>Envianos tu consulta</h2>
+        <form>
+            <div>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="teléfono">Teléfono</label>
+                <br>
+                <input type="tel" id="teléfono" name="teléfono" required> 
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="consulta">Consulta:</label>
+                <br>
+                <textarea id="consulta" name="consulta" rows="6" cols="50" required></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+    
+    <div>
+        <h2>Información de contacto</h2>
+        <div>
+            <img src="img/direccion.png" alt="Dirección" width="40">
+            <strong>Dirección:</strong>
+            Av. Constitución 434, Centro, Tamaulipas, Nuevo León, México.
+        </div>
+
+        <div>
+            <img src="img/telefono.png" alt="Teléfono" width="40">
+            <strong>Teléfono:</strong>
+            <a href="tel:+528112345678">+52 81 1234 5678</a>
+        </div>
+
+        <div>
+            <img src="img/correo.png" alt="Correo" width="40">
+            <strong>Email:</strong>
+            <a href="mailto:turismo@tamaulipas.mx">turismo@tamaulipas.mx</a>
+        </div>
+
+        <h2>Redes Sociales</h2>
+
+        <div>
+            <strong>Seguinos en nuestro Instagram oficial:</strong>
+            <img src="img/instagram.png" alt="Instagram" width="40">
+            <a href="https://www.instagram.com/SomosMexas"> SomosMexas </a>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <p>© 2026 Oficina de Turismo de Tamaulipas</p>
+    </footer>
+</body>
+</html>
