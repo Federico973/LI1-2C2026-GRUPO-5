@@ -1,0 +1,47 @@
+/* Nuestro codigo css sera aca */ 
+
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f2f2f2;
+    --text-color: #333;
+}
+
+/* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
+header {
+    background-color: #635252;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    min-height: 150px;
+
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+
+}
+
+nav.navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.navegacion a:hover {
+    color: var(--primary-color);
+}
