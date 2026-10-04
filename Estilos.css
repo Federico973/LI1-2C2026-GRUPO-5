@@ -11,6 +11,8 @@
     --color-h1: #FFCC99;
     --color-h3: #562b05;
     --fondo-body: #804000;
+    --fondo-gris-oscuro: #1A1A1A;
+    --text-color-tabla: #E8611A;
 }
 /* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
 
@@ -36,7 +38,7 @@ header {
 
 header .logo {
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 20px;
     width: 250px;
     height: 150px;
@@ -93,3 +95,29 @@ nav a {
 }
 
 nav a:hover, nav a.activo { color: var(--primary-color); }
+
+
+.datos-clave{
+    margin: 40px auto;
+    width: 90%;
+    height: 1340px;
+    max-width: 500px;
+    outline: 5px solid;
+    background-color: var(--color-De-Fondo-Header);
+}
+
+dt,
+dd {
+  padding: 0.3rem; 
+  text-align: center; 
+  border-bottom: 3px solid var(--text-color);
+  border-top: 3px solid  var(--text-color);
+  border-left: 3px solid  var(--text-color);
+  border-right: 3px solid  var(--text-color);
+}
+
+dt {
+    background: var(--fondo-gris-oscuro);
+    color: var(--text-color-tabla);
+    text-align: left;
+}
