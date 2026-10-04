@@ -1,20 +1,37 @@
 /* Nuestro codigo css sera aca */ 
 
-
+/*VARIABLES*/
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #f2f2f2;
     --text-color: #333;
+    --color-De-Fondo-Header: #635252;
+    --fuente: "League Gothic", sans-serif;
+    --color-h2: #100c08;
+    --color-h1: #FFCC99;
+    --color-h3: #562b05;
+    --fondo-body: #804000;
 }
-
 /* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
+
+
+* { 
+  box-sizing: border-box; 
+  margin: 1rem; 
+  padding: 0; 
+} 
+
+/*Header, footer y body*/
 header {
-    background-color: #635252;
+    font-family: var(--fuente);
+    font-size: 20px;
+    background-color: var(--color-De-Fondo-Header);
     padding: 20px;
     text-align: center;
     position: relative;
     min-height: 150px;
-
+    box-sizing: border-box; 
+    margin: 0; 
 }
 
 header .logo {
@@ -28,7 +45,40 @@ header .logo {
 
 }
 
-nav.navegacion ul {
+body{
+    max-width: none;
+    margin: 0;
+    line-height: 1.7rem;
+    background-color: var(--fondo-body);
+    color: var(--color-h1)
+}
+
+footer{
+    max-width: none;
+    margin: 0;
+    background-color: var(--color-h3);
+    color: var(--color-h1)
+}
+
+/*Navegacion - Titulos*/
+h1{
+    color: var(--color-h1)
+}
+
+h2{
+    color: var(--color-h1);
+    font-family: var(--fuente);
+    font-size: 1.7rem;
+}
+
+h3{
+    color: white;
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,11 +87,9 @@ nav.navegacion ul {
     gap: 20px;
 }
 
-nav.navegacion a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
-nav.navegacion a:hover {
-    color: var(--primary-color);
-}
+nav a:hover, nav a.activo { color: var(--primary-color); }
