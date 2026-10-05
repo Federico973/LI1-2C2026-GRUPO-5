@@ -121,3 +121,36 @@ dt {
     color: var(--text-color-tabla);
     text-align: left;
 }
+
+/* Formulario de contacto */
+
+form {
+    width: 500px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--verde-oscuro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #164d1a;
+}
