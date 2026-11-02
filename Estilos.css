@@ -13,6 +13,9 @@
     --fondo-body: #f2f2f2;
     --fondo-gris-oscuro: #1A1A1A;
     --text-color-tabla: #E8611A;
+    --verde-oscuro: #06402B;
+    --ancho-maximo: 1200px;
+    --background-paraTexto: rgb(0 0 0 / 0.7);
 }
 /* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
 
@@ -24,9 +27,16 @@
 } 
 
 /*Header, footer y body*/
+
+main {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 0 1rem;
+}   
+
 header {
     font-family: var(--fuente);
-    font-size: 20px;
+    font-size: 30px;
     background-color: var(--color-De-Fondo-Header);
     padding: 20px;
     height: 250px;
@@ -51,6 +61,8 @@ header .logo {
 body{
     max-width: none;
     margin: 0;
+    font-family: var(--fuente);
+    font-size: 25px;
     line-height: 1.7rem;
     background-color: var(--fondo-body);
     color: var(--color-h1)
@@ -59,13 +71,13 @@ body{
 footer{
     max-width: none;
     margin: 0;
-    background-color: #635252;
-    color: #f2f2f2;
+    background-color: var(--color-De-Fondo-Header);
+    color: var(--secondary-color);
 }
 
 /*Navegacion - Titulos*/
 h1{
-    color: #f2f2f2;
+    color: var(--secondary-color);
     font-size: 4rem;
     line-height: 1;
 }
@@ -83,10 +95,21 @@ h3{
     margin-bottom: 5px; 
 }
 
+.carousel-caption {
+  background: var(--background-paraTexto);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#carouselExampleCaptions {
+  width: 70%;
+  margin: 0 auto; 
+}
+
 p{
     margin-top: 5px;
     margin-bottom: 25px;
-    font-family: "Century Gothic", sans-serif;
+    font-family: var(--fuente);
 }
 
 nav ul {
@@ -106,11 +129,15 @@ nav a {
 
 nav a:hover, nav a.activo { color: var(--primary-color); }
 
+iframe,
+img {
+    max-width: 100%;
+}
 
 .datos-clave{
     margin: 40px auto;
     width: 90%;
-    height: 1340px;
+    height: 1360px;
     max-width: 500px;
     outline: 5px solid;
     background-color: var(--color-De-Fondo-Header);
@@ -145,7 +172,7 @@ form textarea {
     border: 1px solid #999;
     border-radius: 5px;
     box-sizing: border-box;
-    font-family: var(--fuente-principal);
+    font-family: var(--fuente);
 }
 
 form textarea {
