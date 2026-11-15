@@ -12,70 +12,28 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- NUEVO NAVBAR TOGGLER QUE NO FUNCIONÓ COMO SE ESPERABA:
-    
     <header>
-        <h1>Descubre tu próximo destino <br> "Santa María de los Sauces"</h1>
-        <img class="logo" src="img/Logo.png" alt="Logo de Rutas y Destinos">
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-      
-          <div class="offcanvas-body">
-        
-        <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/Logo.png" alt="Logo de Rutas y Destinos">
-        </a>
-
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Ciudad.html">Ciudad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lugares.html">Lugares de Interés</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-        </div>
-        </div>
-        </div>
-    </nav>
-
-    </header>
-    -->
-    <header>
-        <h1>Descubre tu próximo destino <br>Santa María de los Sauces</h1>
         <img class="logo" src="./Img/Logo.png" alt="Logo de Rutas y Destinos">
-        <nav class="navegacion">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Ciudad.html" class="activo">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de Interés</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <h1>Descubre tu próximo destino <br>Santa María de los Sauces</h1>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="index.html">Rutas y Destinos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Ciudad.html">Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>    
+    </header> 
     <main> 
             <h2>Santa María de los Sauces</h2>
             <p><em>«Por la Fe, el Río y el Trabajo.»</em></p>
@@ -89,7 +47,10 @@
                 se decidió convertir un puesto ganadero en una población permanente.
                 El primer asentamiento era poco más que una capilla, un almacén, un destacamento, algunas viviendas y un embarcadero.
                 </p>
-                <iframe width="800" height="320" src="./videos/LoreDelVirreinato.mp4" title="Video de origen" allowfullscreen></iframe>
+                <video class="video-origen" controls preload="metadata" aria-label="Video sobre el origen de Santa María de los Sauces">
+                    <source src="./videos/LoreDelVirreinato.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
 
             <h3>La leyenda del sauce</h3>
                 <p>
@@ -98,7 +59,7 @@
                 Los sacerdotes creen que fue abandonada por viajeros anteriores; los vecinos aseguran que fue una señal divina.
                 Desde entonces se colocan velas frente al llamado <strong>Sauce Viejo</strong>.
                 </p>
-            <h3>Línea de tiempo</h3>
+            <h4>Línea de tiempo</h4>
                 <ul>
                 <li><strong>1718:</strong> fundación de la Villa de Santa María de los Sauces.</li>
                 <li><strong>1726:</strong> se construye el primer embarcadero y el comercio crece.</li>
@@ -237,33 +198,48 @@
                     </ul>
         </section>
 
-        <section class="barrios">
+         <section class="barrios">
             <h2>Barrios y zonas</h2>
-
-            <article>
+            <div class="container px-0">
+                <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Plaza Mayor</h3>
                     <p>Centro de la ciudad. Viven comerciantes, funcionarios y familias acomodadas. Es ordenado de día y silencioso de noche.</p>
-            </article>
-            <article>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Barrio del Puerto</h3>
                     <p>Sobre la ribera del río Claro. Marineros, cargadores y pescadores lo hacen ruidoso y activo; abundan las tabernas y los accidentes en el río.</p>
-            </article>
-            <article>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Barrio de los Curtidores</h3>
                     <p>Al sur del centro, cerca de un arroyo. Tiene olor fuerte y humo constante, y sufre contaminación del agua e incendios.</p>
-            </article>
-            <article>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Barrio de San José</h3>
                     <p>Zona occidental y tranquila de artesanos: herreros, carpinteros y fabricantes de carros.</p>
-            </article>
-            <article>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Los Bañados</h3>
                     <p>Al noreste, en terrenos bajos. Viven pescadores y familias pobres; está poco vigilado y es zona de inundaciones y contrabando.</p>
-            </article>
-            <article>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="tarjeta">
                 <h3>Camino de las Estancias</h3>
                     <p>Al oeste, abierto y polvoriento. Es zona de estancieros, peones y arrieros, con robos de ganado y caminos intransitables tras las lluvias.</p>
-            </article>
+                    </article>
+                </div>
+                </div>
+            </div>
         </section>
 
         <section class="costumbres">
@@ -334,15 +310,11 @@
             <p>
             <strong>Gracias por visitar el sitio, espero hayas encontrado información interesante. Cada semana se actualizará con más información.</strong>
             </p>
-        <nav class="volver-al-index">
-            <p>
-             <a href="index.html" title="Volver al inicio">Volver al ÍNDICE</a>
-            </p>
-        </nav>
 
     </main>
     <footer>
             <p>&copy; 2026 Oficina de Santa María de los Sauces. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

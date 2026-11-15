@@ -12,19 +12,28 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <header>
+        <img class="logo" src="./Img/Logo.png" alt="Logo de Rutas y Destinos">
         <h1>Descubre tu próximo destino <br>Santa María de los Sauces</h1>
-        <img class="logo" src="./Img/Logo.png" alt="Logo Rutas y Destinos">
-        <nav class="navegacion">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html" class="activo">Lugares de Interés</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="index.html">Rutas y Destinos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ciudad.html">Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="lugares.html">Lugares de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>    
+    </header>
     <main>
         <h2>Lugares de interés</h2>
             <p>
@@ -33,103 +42,108 @@
                 Desde la Plaza Mayor hasta las orillas del río Claro, 
                 cada zona permite observar una parte distinta de las costumbres sauceñas.
             </p>
-            <img src="./Img/Localidad.png">
-            <section class="Ubicación1">
-                <h3>Plaza Mayor y Cabildo</h3>
-                    <div>Ubicación: Barrio de la Plaza Mayor.</div>
-                    <p><strong>Descripción</strong></p>
-                    <p>
-                        La Plaza Mayor constituye el corazón de Santa María de los Sauces y 
-                        es el punto donde se reúnen comerciantes, vecinos, funcionarios y viajeros. 
-                        A su alrededor se encuentran el Cabildo, la Iglesia de Santa María y 
-                        algunas de las viviendas pertenecientes a las familias más acomodadas de la villa. 
-                        Durante las horas de mayor actividad, la plaza se llena de vendedores, carreteros y 
-                        personas llegadas desde las estancias.
-                    </p>
-            </section>
-            <section class="recomendaciones1">
-                <h3>Qué se puede hacer</h3>
-                <ol>
-                    <li>Recorrer los alrededores del Cabildo.</li>
-                    <li>Observar el movimiento cotidiano de comerciantes y vecinos.</li>
-                    <li>Visitar la Iglesia de Santa María.</li>
-                    <li>Asistir a las celebraciones religiosas y procesiones.</li>
-                    <li>Comprar alimentos y productos ofrecidos por vendedores locales.</li>
-                </ol>
-            </section>
-            <section class="Motivos1">
-                <h3>Por qué se recomienda visitarlo</h3>
-                    <p>
-                        Es el mejor lugar para comprender la vida pública de Los Sauces. 
-                        Además, durante la Fiesta de Santa María, el 15 de agosto, 
-                        la plaza se convierte en escenario de procesiones, música, 
-                        puestos de comida y otras celebraciones populares.
-                    </p>
-            </section>
-
-            <section class="Ubicación2">
-                <h3>Puerto de los Sauces</h3>
-                    <div>Ubicación: Barrio del Puerto, junto al río Claro.</div>
-                    <p><strong>Descripción</strong></p>
-                    <p>
-                        El puerto es el principal centro comercial de la villa y uno de sus lugares más concurridos. 
-                        Desde sus muelles parten y llegan embarcaciones cargadas con cueros, madera, granos, alimentos y 
-                        otras mercancías. El movimiento comienza desde temprano, cuando los carros procedentes 
-                        de las estancias llegan para descargar sus productos.
-                    </p>
-            </section>
-            <section class="recomendaciones2">
-                <h3>Qué se puede hacer</h3>
-                <ol>
-                    <li>Observar la llegada y partida de embarcaciones.</li>
-                    <li>Recorrer los muelles y almacenes.</li>
-                    <li>Conocer el trabajo de pescadores, carpinteros navales y cargadores.</li>
-                    <li>Visitar las tabernas cercanas.</li>
-                    <li>Contemplar el río y el tránsito de pequeñas embarcaciones.</li>
-                </ol>
-            </section>
-            <section class="Motivos2">
-                <h3>Por qué se recomienda visitarlo</h3>
-                    <p>
-                        El puerto permite comprender por qué el río Claro es tan importante para la prosperidad de la ciudad.  
-                        Durante la Fiesta del Río, celebrada en primavera, las embarcaciones son adornadas y 
-                        los habitantes participan de festejos y competencias de navegación.
-                    </p>
-                    <p>Se recomienda, sin embargo, evitar la ribera durante las grandes tormentas y preguntar siempre por el estado del río antes de embarcarse.</p>
-            </section>
-
-            <section class="Ubicación3">
-                <h3>Fuerte de San Telmo</h3>
-                    <div>Ubicación: Próximo al Barrio del Puerto, junto a la ribera.</div>
-                    <p><strong>Descripción</strong></p>
-                    <p>
-                        El Fuerte de San Telmo es una pequeña construcción defensiva levantada para proteger la villa y 
-                        servir como depósito de armas y refugio en caso de peligro. Sus muros son sencillos y 
-                        están adaptados al tamaño de la población, pues Los Sauces no posee grandes fortificaciones. 
-                        Desde sus alrededores puede contemplarse una amplia extensión del río Claro.
-                    </p>
-            </section>
-            <section class="recomendaciones3">
-                <h3>Qué se puede hacer</h3>
-                <ol>
-                    <li>Observar las defensas y dependencias del fuerte.</li>
-                    <li>Conocer las tareas de los soldados destinados a la villa.</li>
-                    <li>Contemplar el río desde la zona elevada.</li>
-                    <li>Escuchar las explicaciones de los habitantes acerca de las antiguas crecidas y conflictos de la región.</li>
-                </ol>
-            </section>
-            <section class="Motivos3">
-                <h3>Por qué se recomienda visitarlo</h3>
-                    <p>
-                        Es uno de los edificios que mejor recuerda el carácter fronterizo y 
-                        estratégico que tuvo Los Sauces desde su fundación. 
-                        También permite apreciar la importancia del río tanto para el comercio como para la defensa de la población.
-                    </p>
-            </section>
+            <img class="img-fluid" src="./Img/Localidad.png" alt="Vista de la localidad de Santa María de los Sauces">
+            <div class="lugar">
+                <section class="Ubicación1">
+                    <h3>Plaza Mayor y Cabildo</h3>
+                        <div>Ubicación: Barrio de la Plaza Mayor.</div>
+                        <p><strong>Descripción</strong></p>
+                        <p>
+                            La Plaza Mayor constituye el corazón de Santa María de los Sauces y 
+                            es el punto donde se reúnen comerciantes, vecinos, funcionarios y viajeros. 
+                            A su alrededor se encuentran el Cabildo, la Iglesia de Santa María y 
+                            algunas de las viviendas pertenecientes a las familias más acomodadas de la villa. 
+                            Durante las horas de mayor actividad, la plaza se llena de vendedores, carreteros y 
+                            personas llegadas desde las estancias.
+                        </p>
+                </section>
+                <section class="recomendaciones1">
+                    <h3>Qué se puede hacer</h3>
+                    <ol>
+                        <li>Recorrer los alrededores del Cabildo.</li>
+                        <li>Observar el movimiento cotidiano de comerciantes y vecinos.</li>
+                        <li>Visitar la Iglesia de Santa María.</li>
+                        <li>Asistir a las celebraciones religiosas y procesiones.</li>
+                        <li>Comprar alimentos y productos ofrecidos por vendedores locales.</li>
+                    </ol>
+                </section>
+                <section class="Motivos1">
+                    <h3>Por qué se recomienda visitarlo</h3>
+                        <p>
+                            Es el mejor lugar para comprender la vida pública de Los Sauces. 
+                            Además, durante la Fiesta de Santa María, el 15 de agosto, 
+                            la plaza se convierte en escenario de procesiones, música, 
+                            puestos de comida y otras celebraciones populares.
+                        </p>
+                </section>
+            </div>
+            <div class="lugar">
+                <section class="Ubicación2">
+                    <h3>Puerto de los Sauces</h3>
+                        <div>Ubicación: Barrio del Puerto, junto al río Claro.</div>
+                        <p><strong>Descripción</strong></p>
+                        <p>
+                            El puerto es el principal centro comercial de la villa y uno de sus lugares más concurridos. 
+                            Desde sus muelles parten y llegan embarcaciones cargadas con cueros, madera, granos, alimentos y 
+                            otras mercancías. El movimiento comienza desde temprano, cuando los carros procedentes 
+                            de las estancias llegan para descargar sus productos.
+                        </p>
+                </section>
+                <section class="recomendaciones2">
+                    <h3>Qué se puede hacer</h3>
+                    <ol>
+                        <li>Observar la llegada y partida de embarcaciones.</li>
+                        <li>Recorrer los muelles y almacenes.</li>
+                        <li>Conocer el trabajo de pescadores, carpinteros navales y cargadores.</li>
+                        <li>Visitar las tabernas cercanas.</li>
+                        <li>Contemplar el río y el tránsito de pequeñas embarcaciones.</li>
+                    </ol>
+                </section>
+                <section class="Motivos2">
+                    <h3>Por qué se recomienda visitarlo</h3>
+                        <p>
+                            El puerto permite comprender por qué el río Claro es tan importante para la prosperidad de la ciudad.  
+                            Durante la Fiesta del Río, celebrada en primavera, las embarcaciones son adornadas y 
+                            los habitantes participan de festejos y competencias de navegación.
+                        </p>
+                        <p>Se recomienda, sin embargo, evitar la ribera durante las grandes tormentas y preguntar siempre por el estado del río antes de embarcarse.</p>
+                </section>
+            </div>
+            <div class="lugar">
+                <section class="Ubicación3">
+                    <h3>Fuerte de San Telmo</h3>
+                        <div>Ubicación: Próximo al Barrio del Puerto, junto a la ribera.</div>
+                        <p><strong>Descripción</strong></p>
+                        <p>
+                            El Fuerte de San Telmo es una pequeña construcción defensiva levantada para proteger la villa y 
+                            servir como depósito de armas y refugio en caso de peligro. Sus muros son sencillos y 
+                            están adaptados al tamaño de la población, pues Los Sauces no posee grandes fortificaciones. 
+                            Desde sus alrededores puede contemplarse una amplia extensión del río Claro.
+                        </p>
+                </section>
+                <section class="recomendaciones3">
+                    <h3>Qué se puede hacer</h3>
+                    <ol>
+                        <li>Observar las defensas y dependencias del fuerte.</li>
+                        <li>Conocer las tareas de los soldados destinados a la villa.</li>
+                        <li>Contemplar el río desde la zona elevada.</li>
+                        <li>Escuchar las explicaciones de los habitantes acerca de las antiguas crecidas y conflictos de la región.</li>
+                    </ol>
+                </section>
+                <section class="Motivos3">
+                    <h3>Por qué se recomienda visitarlo</h3>
+                        <p>
+                            Es uno de los edificios que mejor recuerda el carácter fronterizo y 
+                            estratégico que tuvo Los Sauces desde su fundación. 
+                            También permite apreciar la importancia del río tanto para el comercio como para la defensa de la población.
+                        </p>
+                </section>
+            </div>
     </main>
     <footer>
             <p>&copy; 2026 Oficina de Santa María de los Sauces. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

@@ -14,22 +14,26 @@
     <title>Santa María de los Sauces</title>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <header>
-        <!-- Encabezado de la página -->
+        <img class="logo" src="./Img/Logo.png" alt="Logo de Rutas y Destinos">
         <h1>Descubre tu próximo destino <br>Santa María de los Sauces</h1>
-        <!-- Logo de la página -->
-        <img class="logo" src="./Img/Logo.png" alt="Logo Rutas y Destinos">
-        <!-- Barra de navegación --> 
-        <nav class="navegacion">
-            <ul>
-                <!-- Enlaces de navegación -->
-                 <!-- El href con el # te perminete hacer saltos sobre la misma pagina o se podria buscar otra para que de salto a otra pagina -->
-                <li><a href="#Inicio" class="activo">Inicio</a></li>
-                <li><a href="Ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de Interés</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="index.html">Rutas y Destinos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ciudad.html">Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -58,12 +62,13 @@
                     <p>Aca te dejamos un mapa interactivo y donde esta la ubicacion del lugar. Por si estas mas perdido que turco en la neblina <br>
                         <strong> Te esperamos</strong> </p>
                     <p></p>
-                
+                </article>
         </section>
     </main>
     <footer>
     <!-- Pie de página -->
     <p>&copy; 2026 Santa María de los Sauces. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

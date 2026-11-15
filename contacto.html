@@ -12,22 +12,26 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <header>
-        <!-- Encabezado de la página -->
+        <img class="logo" src="./Img/Logo.png" alt="Logo de Rutas y Destinos">
         <h1>Descubre tu próximo destino <br>Santa María de los Sauces</h1>
-        <!-- Logo de la página -->
-        <img class="logo" src="./Img/Logo.png" alt="Logo Rutas y Destinos">
-        <nav class="navegacion">
-        <!-- Barra de navegación --> 
-            <ul>
-                <!-- Enlaces de navegación -->
-                 <!-- El href con el # te perminete hacer saltos sobre la misma pagina o se podria buscar otra para que de salto a otra pagina -->
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Ciudad.html">Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de Interés</a></li>
-                <li><a href="contacto.html" class="activo">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="index.html">Rutas y Destinos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ciudad.html">Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -95,7 +99,7 @@
         <div>
             <strong>Seguinos en nuestro Instagram oficial:</strong>
             <img src="./Img/instagram.png" alt="Instagram" width="40">
-            <a href="https://www.instagram.com/SomosMexas"> SomosMexas </a>
+            <a href="https://www.instagram.com/SomosMexas" target="_blank" rel="noopener noreferrer">SomosTurismoMaria</a>
         </div>
     </div>
     </main>
@@ -103,5 +107,6 @@
     <footer>
         <p>© 2026 Oficina de Santa María de los Sauces</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

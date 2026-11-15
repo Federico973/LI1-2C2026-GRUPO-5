@@ -12,89 +12,143 @@
     --color-h3: #562b05;
     --fondo-body: #f2f2f2;
     --fondo-gris-oscuro: #1A1A1A;
+    --fondo-Flexbox: #d9d9d9;
     --text-color-tabla: #E8611A;
     --verde-oscuro: #06402B;
-    --ancho-maximo: 1200px;
+    --ancho-maximo: 900px;
     --background-paraTexto: rgb(0 0 0 / 0.7);
 }
 /* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
 
+html {
+    font-size: 100%;
+}
 
-* { 
-  box-sizing: border-box; 
-  margin: 1rem; 
-  padding: 0; 
-} 
+body {
+    font-family: var(--fuente);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    background-color: var(--fondo-body);
+    color: var(--color-h1);
+}
 
 /*Header, footer y body*/
 
-main {
-    max-width: var(--ancho-maximo);
-    margin: 0 auto;
-    padding: 0 1rem;
-}   
-
 header {
     font-family: var(--fuente);
-    font-size: 30px;
     background-color: var(--color-De-Fondo-Header);
-    padding: 20px;
-    height: 250px;
+    padding: 1rem;
     text-align: center;
     position: relative;
-    min-height: 150px;
-    box-sizing: border-box; 
-    margin: 0; 
 }
 
 header .logo {
-    position: absolute;
+    display: block;
     top: 0px;
     left: 20px;
     width: 250px;
     height: 150px;
     object-fit: contain;
     mix-blend-mode: multiply;
-
 }
 
-body{
-    max-width: none;
-    margin: 0;
-    font-family: var(--fuente);
-    font-size: 25px;
-    line-height: 1.7rem;
-    background-color: var(--fondo-body);
-    color: var(--color-h1)
+@media (min-width: 992px) {
+    header {
+        min-height: 150px;
+        padding: 20px 290px;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 250px;
+        height: 150px;
+        margin: 0;
+    }
 }
 
-footer{
-    max-width: none;
+
+/*CONTENEDOR PRINCIPAL*/
+main {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main a {
+    color: white;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: var(--color-nav-hover);
+}
+
+footer {
+    background-color: var(--fondo-Flexbox);
+    color: var(--color-h1);
+}
+
+footer p {
     margin: 0;
-    background-color: var(--color-De-Fondo-Header);
-    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
 }
 
 /*Navegacion - Titulos*/
 h1{
     color: var(--secondary-color);
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1;
 }
 
 h2{
-    color: var(--color-h1);
+    color: var(--color-h2);
     font-family: var(--fuente);
     font-size: 1.7rem;
 }
 
 h3{
-    color: #1A1A1A;
+    color: var(--color-h2);
     font-family: var(--fuente);
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 5px; 
 }
 
+/*TARJETAS */
+.tarjeta {
+    height: 100%;
+    padding: 1rem;
+    background: var(--fondo-Flexbox);
+    border-radius: 10px;
+}
+
+.tarjeta p:last-child {
+    margin-bottom: 0;
+}
+
+/*FLEXBOX: lugares de interés*/
+.lugar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lugar > section {
+    flex: 1 1 250px;             
+    margin-bottom: 0;
+    padding: 1rem;
+    background: var(--fondo-Flexbox);
+    border-radius: 10px;
+}
+
+/*CARRUSEL*/
 .carousel-caption {
   background: var(--background-paraTexto);
   border-radius: 10px;
@@ -110,52 +164,55 @@ p{
     margin-top: 5px;
     margin-bottom: 25px;
     font-family: var(--fuente);
-}
+}  
 
-nav ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
+.navbar-nav .nav-link {
     color: white;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: var(--color-nav-hover);
+    text-decoration: underline;
     text-decoration: none;
 }
 
 nav a:hover, nav a.activo { color: var(--primary-color); }
 
-iframe,
+/*MULTIMEDIA responsive*/
 img {
     max-width: 100%;
 }
 
-.datos-clave{
-    margin: 40px auto;
+video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.datos-clave {
     width: 90%;
-    height: 1360px;
     max-width: 500px;
+    margin: 40px auto;
+    padding: 1rem;
     outline: 5px solid;
-    background-color: var(--color-De-Fondo-Header);
+    background-color: var(--fondo-Flexbox);
 }
 
 dt,
 dd {
-  padding: 0.3rem; 
-  text-align: center; 
-  border-bottom: 3px solid var(--text-color);
-  border-top: 3px solid  var(--text-color);
-  border-left: 3px solid  var(--text-color);
-  border-right: 3px solid  var(--text-color);
+    margin: 0;
+    padding: 0.3rem;
+    text-align: center;
+    border: 3px solid var(--text-color);
 }
 
 dt {
-    background: var(--fondo-gris-oscuro);
-    color: var(--text-color-tabla);
+    background: var(--fondo-body);
+    color: var(--color-h1);
     text-align: left;
 }
 
@@ -194,10 +251,5 @@ form button:hover {
 
 ul{
     margin-bottom: 30px;
-}
-
-.volver-al-index{
-    background-color:rgb(36, 36, 36);
-    color: #327d34
 }
 
