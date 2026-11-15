@@ -16,6 +16,7 @@
     --text-color-tabla: #E8611A;
     --verde-oscuro: #06402B;
     --ancho-maximo: 900px;
+    --color-nav-hover: #41a101;
     --background-paraTexto: rgb(0 0 0 / 0.7);
 }
 /* Estilos para la cabecera. Sera tanto para index como para el resto de paginas */ 
@@ -44,10 +45,9 @@ header {
 
 header .logo {
     display: block;
-    top: 0px;
-    left: 20px;
     width: 250px;
-    height: 150px;
+    height: auto;
+    margin: 0 auto 0.5rem;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
@@ -103,7 +103,7 @@ footer p {
 /*Navegacion - Titulos*/
 h1{
     color: var(--secondary-color);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1;
 }
 
@@ -174,7 +174,6 @@ p{
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
     color: var(--color-nav-hover);
-    text-decoration: underline;
     text-decoration: none;
 }
 
