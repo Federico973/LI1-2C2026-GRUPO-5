@@ -42,6 +42,14 @@ body.oscuro {
     --text-color: #888;
 }
 
+body.oscuro .card {
+    --bs-card-bg: var(--fondo-Flexbox);
+    --bs-card-color: var(--color-h1);
+    --bs-card-cap-bg: #222;
+    --bs-card-cap-color: var(--color-h1);
+    --bs-card-border-color: #555;
+}
+
 #btn-modo {
     position: absolute;
     top: 1rem;

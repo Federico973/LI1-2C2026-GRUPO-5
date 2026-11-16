@@ -1,5 +1,7 @@
 const boton = document.getElementById("btn-modo"); 
 const CLAVE = "modo";
+const modoGuardado = localStorage.getItem(CLAVE) === "oscuro";
+aplicarModo(modoGuardado);
 
 function aplicarModo(oscuro) {
     document.body.classList.toggle("oscuro", oscuro);
