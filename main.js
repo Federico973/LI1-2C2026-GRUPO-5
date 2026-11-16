@@ -23,10 +23,11 @@ if (boton) {
 
 const formulario = document.getElementById("formulario-contacto");
 const mensaje = document.getElementById("mensaje-formulario");
+
 if (formulario && mensaje) {
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
-
+        
     if (!formulario.checkValidity()) {
         mensaje.textContent = "Error: Por favor, completá todos los campos correctamente.";
         mensaje.style.color = "red";
@@ -42,5 +43,6 @@ if (formulario && mensaje) {
             block: "center"
         });
     }, 100);
-});
+
+})
 }
