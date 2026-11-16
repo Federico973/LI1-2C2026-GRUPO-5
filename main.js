@@ -1,7 +1,5 @@
 const boton = document.getElementById("btn-modo"); 
 const CLAVE = "modo";
-const modoGuardado = localStorage.getItem(CLAVE) === "oscuro";
-aplicarModo(modoGuardado);
 
 function aplicarModo(oscuro) {
     document.body.classList.toggle("oscuro", oscuro);
@@ -9,6 +7,9 @@ function aplicarModo(oscuro) {
         boton.textContent = oscuro ? "☀️ Modo claro" : "🌙 Modo oscuro";
     }
 }
+
+const modoGuardado = localStorage.getItem(CLAVE) === "oscuro";
+aplicarModo(modoGuardado);
 
 if (boton) {
     boton.addEventListener("click", () => {
@@ -22,9 +23,10 @@ if (boton) {
 
 const formulario = document.getElementById("formulario-contacto");
 const mensaje = document.getElementById("mensaje-formulario");
+if (formulario && mensaje) {
+    formulario.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-formulario.addEventListener("submit", function(event) {
-    event.preventDefault();
     if (!formulario.checkValidity()) {
         mensaje.textContent = "Error: Por favor, completá todos los campos correctamente.";
         mensaje.style.color = "red";
@@ -40,5 +42,5 @@ formulario.addEventListener("submit", function(event) {
             block: "center"
         });
     }, 100);
-
 });
+}
