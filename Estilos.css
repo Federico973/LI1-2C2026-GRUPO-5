@@ -51,10 +51,28 @@ body.oscuro .card {
 }
 
 #btn-modo {
-    position: absolute;
-    top: 1rem;
-    right: 20px;
-    margin: 0;
+    display: block;
+    margin: 1rem auto 0 auto; 
+    padding: 0.4rem 0.8rem;
+    font-family: var(--fuente);
+    background-color: var(--fondo-Flexbox);
+    color: var(--color-h1);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+}
+
+#btn-modo:hover {
+    background-color: var(--color-nav-hover);
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    #btn-modo {
+        position: absolute;
+        top: 1.5rem;
+        right: 30px;
+        margin: 0;
+    }
 }
 
 /*Header, footer y body*/
