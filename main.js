@@ -17,3 +17,26 @@ if (boton) {
         } catch (e) {}
     });
 }
+
+const formulario = document.getElementById("formulario-contacto");
+const mensaje = document.getElementById("mensaje-formulario");
+
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault();
+    if (!formulario.checkValidity()) {
+        mensaje.textContent = "Error: Por favor, completá todos los campos correctamente.";
+        mensaje.style.color = "red";
+    } else {
+        mensaje.textContent = "¡Formulario enviado correctamente! Gracias por contactarnos.";
+        mensaje.style.color = "green";
+        formulario.reset();
+    }
+
+    setTimeout(function() {
+        mensaje.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }, 100);
+
+});
